@@ -111,6 +111,25 @@
       margin-top: 12px;
     }
 
+    /* ── Coming Soon badge ── */
+    .coming-soon {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 32px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.15em;
+      border-radius: 50px;
+      text-transform: uppercase;
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 12px rgba(58, 142, 240, 0.4); }
+      50%      { box-shadow: 0 0 28px rgba(58, 142, 240, 0.7); }
+    }
+
     /* ── App Store badge ── */
     .store-badge {
       display: inline-block;
@@ -325,6 +344,7 @@
     </div>
     <h1>MS50G <span>Editor</span></h1>
     <p class="subtitle" data-en="Support &amp; Documentation" data-ja="サポート &amp; ドキュメント">Support &amp; Documentation</p>
+    <div class="coming-soon" data-en="Coming Soon" data-ja="近日リリース予定">Coming Soon</div>
     <a href="#" class="store-badge" id="store-link">
       <img id="store-badge-img" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store" />
     </a>
